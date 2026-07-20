@@ -1,16 +1,26 @@
 # 🌱 FarmBuddy AI
 
-## Description
+An AI-powered smart agriculture platform.
 
-AI Powered Agriculture Platform.
-
-## Technologies
+## Tech Stack
 
 - React
 - FastAPI
 - PostgreSQL
 - PyTorch
+- OpenCV
+- Hugging Face
+- Docker
+
+## Modules
+
+- Crop Disease Detection
+- Crop Recommendation
+- Fertilizer Recommendation
+- Yield Prediction
+- AI Chatbot
+- Weather Intelligence
 
 ## Status
 
-Under Development
+🚧 Under Development
