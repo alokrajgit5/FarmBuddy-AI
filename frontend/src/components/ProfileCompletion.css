@@ -1,0 +1,45 @@
+.profile-completion-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+.profile-completion-card h4{
+
+    color:#2E7D32;
+
+    font-weight:700;
+
+}
+
+.progress{
+
+    height:22px;
+
+    border-radius:20px;
+
+    background:#E8F5E9;
+
+}
+
+.progress-bar{
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}
+
+.profile-completion-card p{
+
+    font-size:15px;
+
+}

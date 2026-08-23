@@ -1,0 +1,304 @@
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+
+    width:280px;
+
+    min-height:100vh;
+
+    background:#fdfdf7;
+
+    border-right:1px solid #e5e5e5;
+
+    padding:25px 18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+}
+
+/* =========================
+PROFILE
+========================= */
+
+.sidebar-profile{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.sidebar-profile img{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #7CB342;
+
+    box-shadow:0 10px 30px rgba(124,179,66,.35);
+
+}
+
+.sidebar-profile h4{
+
+    margin-top:15px;
+
+    font-weight:700;
+
+    color:#2E4D2C;
+
+}
+
+.verified{
+
+    display:block;
+
+    color:#2E7D32;
+
+    font-size:14px;
+
+    margin-top:8px;
+
+}
+
+.online{
+
+    display:block;
+
+    color:#4CAF50;
+
+    font-size:13px;
+
+}
+
+/* =========================
+MENU
+========================= */
+
+.sidebar-menu{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.sidebar-menu li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 18px;
+
+    border-radius:16px;
+
+    margin-bottom:8px;
+
+    cursor:pointer;
+
+    color:#444;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.sidebar-menu li svg{
+
+    font-size:20px;
+
+}
+
+/* Hover */
+
+.sidebar-menu li:hover{
+
+    background:#EEF7E8;
+
+    color:#2E7D32;
+
+    transform:translateX(8px);
+
+}
+
+/* Active */
+
+.sidebar-menu .active{
+
+    background:linear-gradient(
+    90deg,
+    #5E8B3D,
+    #7CB342
+    );
+
+    color:white;
+
+    box-shadow:0 12px 25px rgba(76,175,80,.35);
+
+}
+
+.sidebar-menu .active:hover{
+
+    color:white;
+
+}
+
+/* Logout */
+
+.logout{
+
+    color:#E53935;
+
+}
+
+/* =========================
+UPGRADE CARD
+========================= */
+
+.upgrade-card{
+
+    margin-top:30px;
+
+    background:linear-gradient(
+    135deg,
+    #F8F6E8,
+    #FFFDF4
+    );
+
+    border-radius:20px;
+
+    text-align:center;
+
+    padding:18px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+}
+
+.upgrade-card img{
+
+    width:100px;
+
+    margin-bottom:10px;
+
+}
+
+.upgrade-card h5{
+
+    color:#4E6E2E;
+
+    font-weight:700;
+
+}
+
+.upgrade-card p{
+
+    font-size:14px;
+
+    color:#777;
+
+    margin:10px 0;
+
+}
+
+.upgrade-card button{
+
+    border:none;
+
+    background:#6B8E23;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.upgrade-card button:hover{
+
+    background:#4E6E2E;
+
+    transform:scale(1.05);
+
+}
+
+/* =========================
+SCROLL
+========================= */
+
+.sidebar{
+
+    overflow-y:auto;
+
+}
+
+.sidebar::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+
+    background:#8BC34A;
+
+    border-radius:20px;
+
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.sidebar{
+
+width:90px;
+
+padding:15px 8px;
+
+}
+
+.sidebar-profile h4,
+.sidebar-profile span,
+.sidebar-menu li span,
+.upgrade-card{
+
+display:none;
+
+}
+
+.sidebar-menu li{
+
+justify-content:center;
+
+}
+
+}

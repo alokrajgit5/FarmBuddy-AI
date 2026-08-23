@@ -1,0 +1,415 @@
+/* ============================= */
+/* PREMIUM NAVBAR */
+/* ============================= */
+
+.navbar{
+position:sticky;
+top:0;
+z-index:9999;
+backdrop-filter:blur(15px);
+transition:.4s;
+}
+
+/* Logo */
+
+.navbar-brand{
+
+letter-spacing:1px;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.navbar-brand:hover{
+
+transform:scale(1.05);
+
+}
+
+/* Nav Links */
+
+.nav-link{
+
+font-size:15px;
+
+font-weight:500;
+
+color:white!important;
+
+transition:.3s;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.nav-link:hover{
+
+color:#FFD54F!important;
+
+transform:translateY(-2px);
+
+}
+
+/* Active */
+
+.active-link{
+
+color:#FFD54F!important;
+
+font-weight:bold;
+
+}
+
+/* ============================= */
+/* Search Box */
+/* ============================= */
+
+.search-box{
+
+position:relative;
+
+width:230px;
+
+}
+
+.search-box input{
+
+padding-left:38px;
+
+border-radius:30px;
+
+border:none;
+
+font-size:14px;
+
+}
+
+.search-box input:focus{
+
+box-shadow:0 0 8px rgba(255,255,255,.5);
+
+}
+
+.search-icon{
+
+position:absolute;
+
+top:50%;
+
+left:15px;
+
+transform:translateY(-50%);
+
+color:#777;
+
+}
+
+/* ============================= */
+/* Dropdown */
+/* ============================= */
+
+.dropdown-menu{
+
+border:none;
+
+border-radius:15px;
+
+overflow:hidden;
+
+animation:fadeIn .25s;
+
+}
+
+.dropdown-item{
+
+padding:12px 18px;
+
+transition:.3s;
+
+font-size:15px;
+
+}
+
+.dropdown-item:hover{
+
+background:#43A047;
+
+color:white;
+
+padding-left:24px;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(10px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ============================= */
+/* Notification */
+/* ============================= */
+
+.notification-count{
+
+animation:pulse 1.5s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:translate(-50%,-50%) scale(1);
+
+}
+
+50%{
+
+transform:translate(-50%,-50%) scale(1.3);
+
+}
+
+100%{
+
+transform:translate(-50%,-50%) scale(1);
+
+}
+
+}
+
+/* ============================= */
+/* Online Dot */
+/* ============================= */
+
+.online-dot{
+
+position:absolute;
+
+bottom:2px;
+
+right:2px;
+
+width:12px;
+
+height:12px;
+
+background:#00E676;
+
+border:2px solid white;
+
+border-radius:50%;
+
+}
+
+/* ============================= */
+/* Profile Dropdown */
+/* ============================= */
+
+.profile-dropdown{
+
+width:300px;
+
+padding:0;
+
+border-radius:18px;
+
+overflow:hidden;
+
+}
+
+.profile-header{
+
+background:linear-gradient(135deg,#2E7D32,#66BB6A);
+
+padding:25px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.profile-avatar{
+
+margin-bottom:12px;
+
+}
+
+.profile-header h5{
+
+margin-bottom:5px;
+
+font-weight:bold;
+
+}
+
+.profile-header p{
+
+font-size:13px;
+
+opacity:.9;
+
+margin-bottom:10px;
+
+}
+
+.logout-btn{
+
+color:#dc3545;
+
+font-weight:600;
+
+}
+
+.logout-btn:hover{
+
+background:#dc3545;
+
+color:white;
+
+}
+
+/* ============================= */
+/* Buttons */
+/* ============================= */
+
+.btn{
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-2px);
+
+}
+
+/* ============================= */
+/* Dark Theme */
+/* ============================= */
+
+.dark-theme{
+
+background:#121212;
+
+color:white;
+
+transition:.4s;
+
+}
+
+.dark-theme .card{
+
+background:#1E1E1E;
+
+color:white;
+
+}
+
+.dark-theme .table{
+
+color:white;
+
+}
+
+.dark-theme .dropdown-menu{
+
+background:#2B2B2B;
+
+}
+
+.dark-theme .dropdown-item{
+
+color:white;
+
+}
+
+.dark-theme .dropdown-item:hover{
+
+background:#424242;
+
+}
+
+.dark-theme input{
+
+background:#2E2E2E;
+
+color:white;
+
+}
+
+/* ============================= */
+/* Responsive */
+/* ============================= */
+
+@media(max-width:992px){
+
+.search-box{
+
+width:100%;
+
+margin:15px 0;
+
+}
+
+.navbar-nav{
+
+padding-top:15px;
+
+}
+
+.dropdown-menu{
+
+width:100%;
+
+}
+
+.profile-dropdown{
+
+width:100%;
+
+}
+
+.nav-link{
+
+padding:10px 0;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.navbar-brand{
+
+font-size:22px!important;
+
+}
+
+.search-box{
+
+display:none;
+
+}
+
+}

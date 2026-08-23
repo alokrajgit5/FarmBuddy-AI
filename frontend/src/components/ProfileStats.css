@@ -1,0 +1,57 @@
+.profile-stat-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.profile-stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.stat-icon{
+
+    font-size:35px;
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+.profile-stat-card h6{
+
+    color:#777;
+
+    font-weight:600;
+
+}
+
+.profile-stat-card h4{
+
+    font-weight:700;
+
+    color:#2E7D32;
+
+}
+
+.profile-stat-card h5{
+
+    font-weight:700;
+
+}

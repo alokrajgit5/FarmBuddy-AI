@@ -1,0 +1,121 @@
+ Backend/app/main.py                                |   16 [31m-[m
+ {Backend => backend}/app/__init__.py               |    0
+ {Backend => backend}/app/ai/__init__.py            |    0
+ .../app/api => backend/app/ai/labels}/__init__.py  |    0
+ backend/app/ai/labels/classes.py                   |   17 [32m+[m
+ .../app/core => backend/app/ai/models}/__init__.py |    0
+ .../app/ai/models/disease_model.h5                 |    0
+ .../app/models => backend/app/api}/__init__.py     |    0
+ backend/app/api/chat_api.py                        |   28 [32m+[m
+ backend/app/api/crop_api.py                        |  134 [32m++[m
+ backend/app/api/crop_recommendation_api.py         |   26 [32m+[m
+ backend/app/api/dashboard_api.py                   |   37 [32m+[m
+ backend/app/api/disease_api.py                     |  110 [32m+[m
+ backend/app/api/email_api.py                       |   25 [32m+[m
+ backend/app/api/equipment_api.py                   |  184 [32m++[m
+ backend/app/api/equipment_booking_api.py           |  181 [32m++[m
+ backend/app/api/equipment_review_api.py            |  198 [32m++[m
+ backend/app/api/fertilizer_api.py                  |   26 [32m+[m
+ backend/app/api/labor_api.py                       |  127 [32m++[m
+ backend/app/api/labor_booking_api.py               |  149 [32m++[m
+ backend/app/api/notification_api.py                |   40 [32m+[m
+ backend/app/api/password_api.py                    |  111 [32m+[m
+ backend/app/api/payment_api.py                     |  176 [32m++[m
+ backend/app/api/profile_api.py                     |  105 [32m+[m
+ backend/app/api/recommendation_api.py              |   28 [32m+[m
+ backend/app/api/scheme_api.py                      |   26 [32m+[m
+ backend/app/api/seed_api.py                        |  126 [32m++[m
+ backend/app/api/seed_purchase_api.py               |  154 [32m++[m
+ backend/app/api/soil_api.py                        |   87 [32m+[m
+ backend/app/api/tractor_api.py                     |  192 [32m++[m
+ backend/app/api/tractor_booking_api.py             |  162 [32m++[m
+ backend/app/api/upload_api.py                      |   62 [32m+[m
+ backend/app/api/user_api.py                        |   48 [32m+[m
+ backend/app/api/verification_api.py                |  101 [32m+[m
+ backend/app/api/voice_api.py                       |   57 [32m+[m
+ backend/app/api/weather_api.py                     |   26 [32m+[m
+ .../app/schemas => backend/app/core}/__init__.py   |    0
+ backend/app/core/config.py                         |   28 [32m+[m
+ .../app/services => backend/app/db}/__init__.py    |    0
+ backend/app/db/database.py                         |   22 [32m+[m
+ .../utils => backend/app/dependencies}/__init__.py |    0
+ backend/app/dependencies/auth.py                   |   46 [32m+[m
+ backend/app/main.py                                |  117 [32m++[m
+ backend/app/models/__init__.py                     |    6 [32m+[m
+ backend/app/models/crop.py                         |   32 [32m+[m
+ backend/app/models/disease.py                      |   21 [32m+[m
+ backend/app/models/equipment.py                    |   76 [32m+[m
+ backend/app/models/equipment_booking.py            |   66 [32m+[m
+ backend/app/models/equipment_review.py             |   58 [32m+[m
+ backend/app/models/labor.py                        |   77 [32m+[m
+ backend/app/models/labor_booking.py                |   39 [32m+[m
+ backend/app/models/payment.py                      |   69 [32m+[m
+ backend/app/models/profile.py                      |   43 [32m+[m
+ backend/app/models/seed.py                         |   56 [32m+[m
+ backend/app/models/seed_purchase.py                |   51 [32m+[m
+ backend/app/models/soil.py                         |   25 [32m+[m
+ backend/app/models/tractor.py                      |   41 [32m+[m
+ backend/app/models/tractor_booking.py              |   58 [32m+[m
+ backend/app/models/user.py                         |   43 [32m+[m
+ backend/app/schemas/__init__.py                    |   27 [32m+[m
+ backend/app/schemas/chat_schema.py                 |   10 [32m+[m
+ backend/app/schemas/crop_recommendation_schema.py  |   23 [32m+[m
+ backend/app/schemas/crop_schema.py                 |   23 [32m+[m
+ backend/app/schemas/dashboard_schema.py            |   99 [32m+[m
+ backend/app/schemas/disease_schema.py              |    8 [32m+[m
+ backend/app/schemas/equipment_booking_schema.py    |   40 [32m+[m
+ backend/app/schemas/equipment_review_schema.py     |   44 [32m+[m
+ backend/app/schemas/equipment_schema.py            |   70 [32m+[m
+ backend/app/schemas/fertilizer_schema.py           |   15 [32m+[m
+ backend/app/schemas/labor_booking_schema.py        |   35 [32m+[m
+ backend/app/schemas/labor_schema.py                |   34 [32m+[m
+ backend/app/schemas/notification_schema.py         |    9 [32m+[m
+ backend/app/schemas/password_schema.py             |   10 [32m+[m
+ backend/app/schemas/payment_schema.py              |   40 [32m+[m
+ backend/app/schemas/profile_schema.py              |   58 [32m+[m
+ backend/app/schemas/recommendation_schema.py       |   22 [32m+[m
+ backend/app/schemas/scheme_schema.py               |   25 [32m+[m
+ backend/app/schemas/seed_purchase_schema.py        |   35 [32m+[m
+ backend/app/schemas/seed_schema.py                 |   65 [32m+[m
+ backend/app/schemas/soil_schema.py                 |   20 [32m+[m
+ backend/app/schemas/tractor_booking_schema.py      |   34 [32m+[m
+ backend/app/schemas/tractor_schema.py              |   28 [32m+[m
+ backend/app/schemas/user_schema.py                 |   21 [32m+[m
+ backend/app/schemas/weather_schema.py              |   10 [32m+[m
+ backend/app/services/__init__.py                   |    9 [32m+[m
+ backend/app/services/chat_service.py               |   52 [32m+[m
+ backend/app/services/crop_health_service.py        |   53 [32m+[m
+ .../app/services/crop_recommendation_service.py    |  114 [32m+[m
+ backend/app/services/crop_service.py               |   99 [32m+[m
+ backend/app/services/dashboard_service.py          | 1501 [32m+++++++++++++[m
+ backend/app/services/disease_service.py            |   66 [32m+[m
+ backend/app/services/email_service.py              |   39 [32m+[m
+ backend/app/services/equipment_booking_service.py  |  239 [32m+++[m
+ backend/app/services/equipment_review_service.py   |  264 [32m+++[m
+ backend/app/services/equipment_service.py          |  170 [32m++[m
+ backend/app/services/fertilizer_service.py         |  101 [32m+[m
+ backend/app/services/labor_booking_service.py      |  132 [32m++[m
+ backend/app/services/labor_service.py              |  133 [32m++[m
+ backend/app/services/notification_service.py       |   93 [32m+[m
+ backend/app/services/payment_service.py            |  228 [32m++[m
+ backend/app/services/profile_service.py            |  100 [32m+[m
+ backend/app/services/recommendation_service.py     |   90 [32m+[m
+ backend/app/services/scheme_service.py             |  185 [32m++[m
+ backend/app/services/seed_purchase_service.py      |  239 [32m+++[m
+ backend/app/services/seed_service.py               |  129 [32m++[m
+ backend/app/services/soil_service.py               |   80 [32m+[m
+ backend/app/services/tractor_booking_service.py    |  119 [32m++[m
+ backend/app/services/tractor_service.py            |  109 [32m+[m
+ backend/app/services/upload_service.py             |   64 [32m+[m
+ backend/app/services/user_service.py               |   70 [32m+[m
+ backend/app/services/voice_service.py              |  112 [32m+[m
+ backend/app/services/weather_service.py            |   28 [32m+[m
+ .../app/uploads/.gitkeep                           |    0
+ .../app/uploads/__init__.py                        |    0
+ backend/app/uploads/crops/__init__.py              |    0
+ backend/app/uploads/profiles/__init__.py           |    0
+ backend/app/utils/__init__.py                      |    0
+ backend/app/utils/jwt.py                           |   57 [32m+[m
+ backend/app/utils/security.py                      |   46 [32m+[m
+ backend/audio/output.mp3                           |    0
+ backend/audio/sample.wav
